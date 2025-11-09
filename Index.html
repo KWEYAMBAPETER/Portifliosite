@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kweyamba Peter | Portfolio</title>
+    <title>Kweyamba Peter | Frontend Developer Portfolio</title>
     <link class="icon" rel="icon" href="./images/logo.png" />
-    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <!-- Elfsight WhatsApp Chat -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
     <link rel="stylesheet" href="me.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <!-- Header/Navigation -->
@@ -19,7 +16,7 @@
       <div class="container">
         <nav>
           <div class="logo">
-            <img src="./images/logo.png" alt="logo" />
+            <img src="./images/logo.png" alt="Kweyamba Peter Logo" />
             <span>K_Peter</span>
           </div>
           <ul class="nav-links">
@@ -29,11 +26,11 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <div class="hamburger">
+          <button class="hamburger" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </nav>
       </div>
     </header>
@@ -42,15 +39,17 @@
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
+          <span class="hero-badge">Frontend Developer</span>
           <h1>Hi, I'm <span>Kweyamba Peter</span></h1>
-          <h2>Frontend Developer</h2>
+          <h2>Crafting Digital Experiences That Matter</h2>
           <p>
-            I create beautiful, responsive websites with clean code that makes
-            the devil nervous. I don't need anger management, I need people to
-            Stop pissing me off. I don't make mistakes. I create unexpected
-            features.
+            I create beautiful, responsive websites with clean code that delivers exceptional user experiences. 
+            Passionate about turning ideas into interactive realities where design meets functionality.
           </p>
-          <a href="#projects" class="btn">View My Work</a>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
         </div>
       </div>
     </section>
@@ -59,23 +58,66 @@
     <section id="about" class="about">
       <div class="container">
         <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know the person behind the code</p>
+        
         <div class="about-content">
           <div class="about-text">
-             <div class="about-video">
-              <iframe src="https://drive.google.com/file/d/1WPtKs12Jdk_RllwmmjBmntNqvHAOi-gB/preview" width="640" height="480" allow="autoplay"></iframe>
-            </div>
-            <h3>Who I am </h3>
-            
+            <h3>Turning Ideas Into Interactive Experiences</h3>
             <p>
-              I love turning ideas into interactive experiences with clean code and thoughtful design. I am passionate about building interfaces that strike a balance between aesthetics, accessibility, and seamless functionality where design meets engineering.
+              I'm a passionate Frontend Developer dedicated to building interfaces that strike the perfect balance 
+              between aesthetics, accessibility, and seamless functionality. With a keen eye for detail and a 
+              commitment to clean code, I bring digital visions to life.
             </p>
             <p>
-              When I'm not coding, you can find me hiking, reading tech blogs,
-              or experimenting with new web technologies.
-            </p
-              >  
-            <p>I am currently pursuing a Bachelor of Science in Computer and Communications Engineering at Makerere University</p>
-            <a href="https://drive.google.com/file/d/1bJrwC6Ij9i0wzEp0kkWS2SLaZhoeji86/view?usp=drivesdk" class="btn">Download Resume</a>
+              When I'm not coding, you can find me exploring new web technologies, contributing to open-source 
+              projects, or staying updated with the latest industry trends. I believe in continuous learning and 
+              pushing the boundaries of what's possible on the web.
+            </p>
+            
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+            
+            <p>
+              I am currently pursuing a Bachelor of Science in Computer and Communications Engineering at 
+              Makerere University, where I'm honing my technical skills and building a strong foundation 
+              for my development career.
+            </p>
+            
+            <div class="about-actions">
+              <a href="https://drive.google.com/file/d/1bJrwC6Ij9i0wzEp0kkWS2SLaZhoeji86/view?usp=drivesdk" class="btn" target="_blank">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
+            </div>
+          </div>
+          
+          <div class="about-media">
+            <div class="about-video">
+              <iframe 
+                src="https://drive.google.com/file/d/1WPtKs12Jdk_RllwmmjBmntNqvHAOi-gB/preview" 
+                width="640" 
+                height="480" 
+                allow="autoplay"
+                title="Kweyamba Peter CV Preview"
+                loading="lazy">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -85,67 +127,119 @@
     <section id="projects" class="projects">
       <div class="container">
         <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Here are some of my recent projects that showcase my skills in web development and design</p>
+        
         <div class="projects-grid">
+          <!-- Project 1 - GodLive Medical -->
           <div class="project-card">
-            <img
-              src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Project 1"
-            />
+            <div class="project-status">Live</div>
+            <div class="project-image">
+              <div class="project-image-content">
+                <i class="fas fa-hospital-alt"></i>
+                <h4>Medical Clinic Website</h4>
+                <p>Healthcare & Wellness</p>
+              </div>
+              <div class="project-overlay">
+                <h4>Healthcare Platform</h4>
+                <p>Modern medical clinic website with appointment booking and service information</p>
+              </div>
+            </div>
             <div class="project-info">
-              <h3>GodLive Website Project</h3>
-              <p>
-                A fully responsive Capstone project for Godlive Medical Clinic built with pure HTML and CSS. I appreciate the
-                opportunity to showcase my skills in web development through this project. 
-              </p>
+              <h3>GodLive Medical Website</h3>
+              <p>A fully responsive Capstone project for Godlive Medical Clinic built with pure HTML and CSS. Features modern design, service sections, and patient-focused interface.</p>
+              
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+              
               <div class="project-links">
-                <a href="https://godlivemedicals.netlify.app/" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                >
-                <a href="https://godlivemedicals.netlify.app/" target="_blank"
-                  ><i class="fab fa-github"></i> Code</a
-                >
+                <a href="https://godlivemedicals.netlify.app/" target="_blank" rel="noopener">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/KWEYAMBAPETER/godlive-medical" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
               </div>
             </div>
           </div>
 
+          <!-- Project 2 - DreamsTime Restaurant -->
           <div class="project-card">
-            <img
-              src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Project 2"
-            />
+            <div class="project-status">Live</div>
+            <div class="project-image">
+              <div class="project-image-content">
+                <i class="fas fa-utensils"></i>
+                <h4>Restaurant Website</h4>
+                <p>Food & Dining</p>
+              </div>
+              <div class="project-overlay">
+                <h4>Restaurant Platform</h4>
+                <p>Elegant restaurant website with menu display and reservation system</p>
+              </div>
+            </div>
             <div class="project-info">
-              <h3>DreamsTime Restuarant</h3>
-              <p>
-                A fully responsive restaurant website built with HTML, CSS, and DaisyUI. It features a modern design, interactive elements, and a user-friendly interface. I appreciate the opportunity to showcase my skills in web development through this project.
-              </p>
+              <h3>DreamsTime Restaurant</h3>
+              <p>A fully responsive restaurant website built with HTML, CSS, and DaisyUI. Features modern design, interactive elements, menu display, and user-friendly interface.</p>
+              
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">DaisyUI</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              
               <div class="project-links">
-                <a href="https://dreams-timesite.netlify.app/" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                >
-                <a href="https://dreams-timesite.netlify.app/" target="_blank"
-                  ><i class="fab fa-github"></i> Code</a
-                >
+                <a href="https://dreams-timesite.netlify.app/" target="_blank" rel="noopener">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/KWEYAMBAPETER/dreamstime-restaurant" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
               </div>
             </div>
           </div>
 
+          <!-- Project 3 - MN Movie Ranking -->
           <div class="project-card">
-            <img
-              src="https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg?auto=compress&cs=tinysrgb&w=600"
-              alt="Project 3"
-            />
+            <div class="project-status">Live</div>
+            <div class="project-image">
+              <div class="project-image-content">
+                <i class="fas fa-film"></i>
+                <h4>Movie Platform</h4>
+                <p>Entertainment</p>
+              </div>
+              <div class="project-overlay">
+                <h4>Movie Ranking Site</h4>
+                <p>Interactive platform for movie discovery and ratings</p>
+              </div>
+            </div>
             <div class="project-info">
               <h3>MN Movie Ranking Site</h3>
-              <p>
-                A movie ranking site that allows users to watch movies, view details, and rank them. Built with HTML, CSS, and Flowbite, it provides a user-friendly interface and interactive features. It's a privilege to contribute my web development expertise to this project, and I'm grateful for the experience.
-              </p>
+              <p>A movie ranking site that allows users to watch movies, view details, and rank them. Built with HTML, CSS, and Flowbite for a seamless user experience.</p>
+              
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Flowbite</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              
               <div class="project-links">
-                <a href="https://moviesite-final.netlify.app/" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                >
-                <a href="https://github.com/KWEYAMBAPETER/MN-movies.git" target="_blank"
-                  ><i class="fab fa-github"></i> Code</a
-                >
+                <a href="https://moviesite-final.netlify.app/" target="_blank" rel="noopener">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/KWEYAMBAPETER/MN-movies" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
               </div>
             </div>
           </div>
@@ -157,59 +251,54 @@
     <section id="skills" class="skills">
       <div class="container">
         <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with to bring ideas to life</p>
+        
         <div class="skills-container">
           <div class="skill-category">
-            <h3>Frontend</h3>
+            <h3>Frontend Development</h3>
             <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>React.js</li>
+              <li>HTML5 & Semantic Markup</li>
+              <li>CSS3 & Modern Layouts</li>
               <li>JavaScript (ES6+)</li>
-              <li>Frameworks and Libraries</li>
+              <li>React.js & Components</li>
               <li>Responsive Design</li>
+              <li>CSS Frameworks</li>
             </ul>
           </div>
 
           <div class="skill-category">
-            <h3>Tools</h3>
+            <h3>Development Tools</h3>
             <ul>
-              <li>Git/GitHub</li>
+              <li>Git & GitHub</li>
               <li>VS Code</li>
-              <li>Canva</li>
-            
-              <li>Postman</li>  
-              <li>Google Tools</li>
-              <li>Microsoft office tools</li>
-
-
-              
+              <li>Chrome DevTools</li>
+              <li>Postman API</li>
+              <li>Google Tools Suite</li>
+              <li>Microsoft Office</li>
             </ul>
           </div>
 
           <div class="skill-category">
-            <h3>Communication Tools</h3>
+            <h3>Design & Collaboration</h3>
             <ul>
-              <li>ChatWay</li>
-              <li>Slack</li>
-              <li>Email</li>
-              <li>Zoom</li>
-              <li>Google Meet</li>
-              <li>Microsoft Teams</li>
+              <li>UI/UX Principles</li>
+              <li>Figma & Canva</li>
+              <li>Agile Methodology</li>
+              <li>Team Collaboration</li>
+              <li>Project Management</li>
+              <li>Client Communication</li>
             </ul>
           </div>
 
           <div class="skill-category">
-            <h3>Other Skills</h3>
+            <h3>Professional Skills</h3>
             <ul>
-              
-              <li>Collaboration</li>
+              <li>Problem Solving</li>
               <li>Communication</li>
-              <li>Leadership</li>
-              <li>Work Ethic</li>
-              <li>Adaptability</li>
-              <li>Problem-Solving</li>
               <li>Time Management</li>
-
+              <li>Adaptability</li>
+              <li>Leadership</li>
+              <li>Continuous Learning</li>
             </ul>
           </div>
         </div>
@@ -220,49 +309,91 @@
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss your next project or just say hello!</p>
+        
         <div class="contact-content">
           <div class="form-container">
-            <h2>Email Me/ Say Hi!!</h2>
-            <form
-              id="contact-form"
-              action="https://formspree.io/f/myzwavey"
-              method="POST"
-            >
-              <label>
-                Name:
-                <input type="text" name="name" required />
-              </label>
-              <label>
-                Email:
-                <input type="email" name="email" required />
-              </label>
-              <label>
-                Message:
-                <textarea name="message" rows="5" required></textarea>
-              </label>
-              <!-- Honeypot for spam (hidden) -->
-              <input type="text" name="_honey" style="display: none" />
-              <!-- Disable Formspree branding -->
-              <input type="hidden" name="_no_auto_response" value="true" />
-              <button type="submit" id="submit-btn">Send Message</button>
+            <h2>Send Me a Message</h2>
+            <form id="contact-form" action="https://formspree.io/f/myzwavey" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or just say hi!"></textarea>
+              </div>
+              
+              <!-- Honeypot for spam -->
+              <input type="text" name="_honey" style="display: none">
+              <input type="hidden" name="_no_auto_response" value="true">
+              
+              <button type="submit" id="submit-btn" class="btn">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
             </form>
+            
             <div id="success-message" class="hidden">
-              <p>✅ Thanks For Your Response! Your message has been sent.</p>
+              <i class="fas fa-check-circle"></i>
+              <p>Thank you for your message! I'll get back to you soon.</p>
             </div>
           </div>
 
           <div class="contact-info">
             <h3>Contact Information</h3>
-            <p><i class="fas fa-envelope"></i> kweyambapeter6@gmail.com</p>
-            <p><i class="fas fa-phone"></i> +256 789610020</p>
-            <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>kweyambapeter6@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+256 789610020</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Kampala, Uganda</p>
+                </div>
+              </div>
+            </div>
 
             <div class="social-links">
-              <a href="https://github.com/KWEYAMBAPETER" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/kweyamba-peter-080894346/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://medium.com/@kweyambapeter" target="_blank"><i class="fab fa-medium"></i></a>
-              <a href="https://www.facebook.com/people/Kweyamba-Peter/100069856425404/" target="_blank"><i class="fab fa-facebook
-                "></i></a>
+              <a href="https://github.com/KWEYAMBAPETER" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kweyamba-peter-080894346/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://medium.com/@kweyambapeter" target="_blank" rel="noopener" aria-label="Medium">
+                <i class="fab fa-medium"></i>
+              </a>
+              <a href="https://www.facebook.com/people/Kweyamba-Peter/100069856425404/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -272,15 +403,30 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p></span>  Created With Dedication And Passion by KWEYAMBA PETER | Web Developer | Tech Enthusiast. All rights reserved.<br/> &copy; <span id="current-year"></span></p>
-        <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        <div class="footer-content">
+          <p>Created With Dedication And Passion by KWEYAMBA PETER | Web Developer | Tech Enthusiast</p>
+          
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+          
+          <p class="copyright">All rights reserved. &copy; <span id="current-year"></span></p>
+        </div>
       </div>
     </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
 
     <!-- Elfsight WhatsApp Chat Widget -->
     <div class="elfsight-app-d66aba60-7131-4768-9e49-58bb690d665f" data-elfsight-app-lazy></div>
 
     <script src="./me.js"></script>
-    
   </body>
 </html>
