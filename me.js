@@ -169,4 +169,102 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Run on scroll
     window.addEventListener("scroll", animateOnScroll);
+
+    // Enhanced responsive features for amber theme
+    enhanceResponsiveFeatures();
+});
+
+// Additional responsive enhancements
+function enhanceResponsiveFeatures() {
+    // Handle window resize for responsive adjustments
+    window.addEventListener('resize', function() {
+        // Close mobile menu when switching to desktop
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+
+    // Improve touch experience for mobile
+    if ('ontouchstart' in window) {
+        document.body.classList.add('touch-device');
+        
+        // Add touch feedback for buttons
+        document.querySelectorAll('.btn, .project-links a, .social-links a').forEach(button => {
+            button.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.95)';
+            });
+            
+            button.addEventListener('touchend', function() {
+                this.style.transform = '';
+            });
+        });
+    }
+
+    // Lazy loading for images
+    const images = document.querySelectorAll('img');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src || img.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+
+    images.forEach(img => {
+        if (img.complete) {
+            img.classList.remove('lazy');
+        } else {
+            img.classList.add('lazy');
+            imageObserver.observe(img);
+        }
+    });
+
+    // Enhanced iframe responsiveness
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+        // Add responsive wrapper if not present
+        if (!iframe.parentElement.classList.contains('responsive-iframe')) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'responsive-iframe';
+            wrapper.style.position = 'relative';
+            wrapper.style.width = '100%';
+            wrapper.style.paddingTop = '56.25%'; // 16:9 aspect ratio
+            
+            iframe.style.position = 'absolute';
+            iframe.style.top = '0';
+            iframe.style.left = '0';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            
+            iframe.parentNode.insertBefore(wrapper, iframe);
+            wrapper.appendChild(iframe);
+        }
+    });
+}
+
+// Performance optimization for scroll events
+let scrollTimeout;
+window.addEventListener('scroll', function() {
+    if (!scrollTimeout) {
+        scrollTimeout = setTimeout(function() {
+            scrollTimeout = null;
+            // Your scroll handling code here
+        }, 100);
+    }
+});
+
+// Handle page visibility for performance
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+        // Page is hidden, pause non-essential animations
+    } else {
+        // Page is visible, resume animations
+    }
 });
